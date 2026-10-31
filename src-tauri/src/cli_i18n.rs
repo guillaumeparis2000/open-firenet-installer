@@ -101,7 +101,7 @@ impl CliLang {
                 "📦 5. Consultar versiones de GitHub (releases & pre-releases)",
                 "📟 6. Monitor Serie (ver logs de la estufa en vivo)",
                 "🚪 7. Salir",
-            ]
+            ],
         }
     }
 
@@ -596,9 +596,9 @@ impl CliLang {
     }
 }
 
-/// One text per language, in the order French, English, German, Italian.
+/// One text per language, in the order French, English, German, Italian, Spanish.
 macro_rules! tr {
-    ($lang:expr, $fr:expr, $en:expr, $de:expr, $it:expr $(,)?) => {
+    ($lang:expr, $fr:expr, $en:expr, $de:expr, $it:expr, $es:expr $(,)?) => {
         match $lang {
             CliLang::Fr => $fr,
             CliLang::En => $en,
